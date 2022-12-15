@@ -46,10 +46,26 @@
   background-color: #282c34;
   color: #61dafb;
   padding: 10px;
+  display: flex;
+}
+
+.about {
+  position: absolute;
+  right: 50px;
+  font-size: 1rem;
 }
 
 .my-img {
   border: 5px solid #282c34;
   border-radius: 100%;
   margin: 50px;
+}
+
+.about-container {
+  font-size: 1.5rem;
+}
+
+a {
+  color: #61dafb;
+  text-decoration: none;
 }

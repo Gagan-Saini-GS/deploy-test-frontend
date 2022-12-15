@@ -1,9 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <div className="navbar">
-      <h1>Gagan Saini</h1>
+      <Link to="/">
+        <h1>Gagan Saini</h1>
+      </Link>
+      <Link to="/about">
+        <h1 className="about">About</h1>
+      </Link>
     </div>
   );
 }
