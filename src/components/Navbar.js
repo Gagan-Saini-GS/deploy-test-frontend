@@ -7,9 +7,14 @@ function Navbar() {
       <Link to="/">
         <h1>Gagan Saini</h1>
       </Link>
-      <Link to="/about">
-        <h1 className="about">About</h1>
-      </Link>
+      <div className="menubar">
+        <Link to="/about">
+          <h1 className="about">About</h1>
+        </Link>
+        <Link to="/contact">
+          <h1 className="about">Contact</h1>
+        </Link>
+      </div>
     </div>
   );
 }
