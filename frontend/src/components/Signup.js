@@ -15,6 +15,9 @@ function Signup() {
       .then((response) => response.json())
       .then((data) => {
         console.log(data.msg);
+        alert("Welcome you are signuped");
+        document.querySelector(".username").value = "";
+        document.querySelector(".useremail").value = "";
       });
   }
 
