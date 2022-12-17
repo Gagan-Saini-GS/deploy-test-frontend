@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "./Navbar";
 import About from "./About";
 import Contact from "./Contact";
+import Feed from "./Feed";
+import Signup from "./Signup";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -20,8 +22,10 @@ function App() {
               </div>
             }
           />
+          <Route path="/Feed" element={<Feed />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/signup" element={<Signup />} />
         </Routes>
       </div>
     </Router>
