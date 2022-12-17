@@ -1,13 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Navbar() {
+  const [showMenu, setShowMenu] = useState(false);
+
+  function expandNavbar() {
+    setShowMenu(!showMenu);
+  }
+
   return (
     <div className="navbar">
       <Link to="/">
-        <h1>Gagan Saini</h1>
+        <h1 className="-my-name">Gagan Saini</h1>
       </Link>
-      <div className="menubar">
+      <div className="expand-icon" onClick={expandNavbar}>
+        E
+      </div>
+      <div className={showMenu ? "show-menubar" : "menubar"}>
         <Link to="/feed">
           <h1 className="about">Feed</h1>
         </Link>

@@ -16,7 +16,7 @@ function App() {
           <Route
             path="/"
             element={
-              <div>
+              <div className="info-box">
                 <h1>This is my portfolio website</h1>
                 <img className="my-img" src="image/gagan.jpg" alt="" />
               </div>
